@@ -123,6 +123,11 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'setup/static')] #caminho até a pasta criada em setup
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+# Media
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Criado os comandos para fazer o download das imagens 
+MEDIA_URL = "/media/"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
