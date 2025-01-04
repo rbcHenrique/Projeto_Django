@@ -24,4 +24,5 @@ from django.conf.urls.static import static # criado para download das imagens
 urlpatterns = [
         path('admin/', admin.site.urls),
         path('', include('galeria.urls')),
+        path('', include('usuarios.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # criado para download das imagens  para o BD da aplicação
